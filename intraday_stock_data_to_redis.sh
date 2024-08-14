@@ -1,5 +1,5 @@
 VIRTUALENV_PATH=/home/squarefish75/python_envs/fugle_env
-PROJECT_PATH=$(pwd) #$(dirname $0)
+PROJECT_PATH=$(dirname $0)
 
 tic=$(date +%s%N) \
   && output=$(echo $($VIRTUALENV_PATH/bin/python $PROJECT_PATH/get_intraday_stock_data.py)) \
