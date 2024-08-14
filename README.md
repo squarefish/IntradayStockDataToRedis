@@ -1,6 +1,8 @@
 ## Redis應用: 股票盤中趨勢分析  ##
 
-<ins>說明</ins>: 呼叫玉山富果即時行情API擷取股票交易資料，儲存到Redis，使用`redis-cli`和shell scripts處理資料和分析。
+<ins>說明</ins>: 
+
+呼叫玉山富果即時行情API擷取股票交易資料，儲存到Redis，使用`redis-cli`和shell scripts處理資料和分析。
 
 <ins>使用到的雲端資源</ins>： 
  
