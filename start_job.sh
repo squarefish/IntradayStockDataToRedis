@@ -22,7 +22,7 @@ while [ "${current_time}" -gt "${start_time}" ] && [ "${current_time}" -lt "${en
 do
   echo Heartbeats $ticker at $(TZ=CST6CDT date +%Y-%m-%d-%H:%M:%S)
   /bin/bash $current_dir/intraday_stock_data_to_redis.sh
-  sh generate_time_series_stock_data.sh
+  sh $current_dir/generate_time_series_stock_data.sh
   sleep 2
   current_time=$(TZ=GMT-8 date +%s)
 done
