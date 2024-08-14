@@ -1,4 +1,4 @@
-from fugle_marketdata import WebSocketClient, RestClient
+from fugle_marketdata import RestClient
 import json
 
 # API金鑰記得替換
