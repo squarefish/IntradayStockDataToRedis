@@ -20,7 +20,7 @@ echo Date \
      IncrTradeVolumeAtAsk > stock_time_series_data_$(date +'%Y%m%d').txt
 while [ "${current_time}" -gt "${start_time}" ] && [ "${current_time}" -lt "${end_time}" ];
 do
-  echo Heartbeats $ticker at $(TZ=CST6CDT date +%Y-%m-%d-%H:%M:%S)
+  echo Heartbeats at $(TZ=GMT-8 date +%Y-%m-%d-%H:%M:%S)
   /bin/bash $current_dir/intraday_stock_data_to_redis.sh
   sh $current_dir/generate_time_series_stock_data.sh
   sleep 2
