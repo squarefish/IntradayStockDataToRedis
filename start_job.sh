@@ -1,6 +1,6 @@
 today=$(TZ=GMT-8 date +'%Y-%m-%d')
 start_time=$(TZ=GMT-8 date -d $today' 09:00:00' +%s)
-end_time=$(TZ=GMT-8 date -d $today' 13:30:00' +%s)
+end_time=$(TZ=GMT-8 date -d $today' 13:30:10' +%s)
 current_time=$(TZ=GMT-8 date +%s)
 current_dir=$(dirname $0)
 echo Date \
